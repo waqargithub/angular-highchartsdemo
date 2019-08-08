@@ -1,0 +1,32 @@
+<div id="buttonContainer">
+  <div class="tooltip halfWidth">
+    <button mat-button class="colorButton" (click)="redrawBackgroundColor()">
+      Redraw - {{redrawBtnColorChoice}} Background
+    </button>
+    <span class="tooltiptext">Redraws chart</span>
+  </div>
+
+  <div class="tooltip halfWidth">
+    <button mat-button class="colorButton" (click)="toggleBackgroundColor()">
+      Make Background {{bGroundBtnColorChoice}}
+    </button>
+    <span class="tooltiptext">Updates without redrawing</span>
+  </div>
+
+  <div class="tooltip halfWidth">
+    <button mat-button class="colorButton" (click)="toggleLegend()">
+      Show SMA in {{legendBtnChoice}} 
+    </button>
+    <span class="tooltiptext">Updates without redrawing</span>
+  </div>
+
+  <div class="tooltip halfWidth">
+    <button mat-button class="colorButton" (click)="toggleChartType()">
+      Make Chart Type {{chartTypeBtnChoice}}
+    </button>
+    <span class="tooltiptext">Updates without redrawing</span>
+  </div>
+</div>
+
+<div id="container">
+</div>
